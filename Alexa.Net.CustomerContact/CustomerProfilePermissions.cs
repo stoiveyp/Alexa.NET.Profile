@@ -1,7 +1,7 @@
 ﻿using System;
-namespace Alexa.Net.Response
+namespace Alexa.NET.Response
 {
-	public static class CustomerContactPermissions
+	public static class CustomerProfilePermissions
 	{
 		public const string FullName =     "alexa::profile:name:read";
 		public const string GivenName =    "alexa::profile:given_name:read";

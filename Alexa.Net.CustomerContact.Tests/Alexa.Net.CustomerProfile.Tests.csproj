@@ -14,6 +14,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Alexa.Net.CustomerContact\Alexa.Net.CustomerContact.csproj" />
+    <ProjectReference Include="..\Alexa.Net.CustomerContact\Alexa.Net.CustomerProfile.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Examples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Examples\FullName.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
