@@ -2,7 +2,9 @@
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Alexa.NET.CustomerProfile;
 using Alexa.NET.Request;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace Alexa.NET.Response
@@ -32,5 +34,25 @@ namespace Alexa.NET.Response
 			var response = JValue.Parse(nameResponse);
 			return response.Value<string>();
 		}
-    }
+
+		public async Task<string> GivenName()
+        {
+            var givenNameResponse = await Client.GetStringAsync("/v2/accounts/~current/settings/Profile.givenName");
+			var response = JValue.Parse(givenNameResponse);
+            return response.Value<string>();
+        }
+        
+		public async Task<string> Email()
+        {
+            var emailResponse = await Client.GetStringAsync("/v2/accounts/~current/settings/Profile.email");
+			var response = JValue.Parse(emailResponse);
+            return response.Value<string>();
+        }
+
+		public async Task<MobileNumberResponse> MobileNumber()
+		{
+			var mobileNumberResponse = await Client.GetStringAsync("/v2/accounts/~current/settings/Profile.mobileNumber");
+			return JsonConvert.DeserializeObject<MobileNumberResponse>(mobileNumberResponse);
+		}
+	}
 }
