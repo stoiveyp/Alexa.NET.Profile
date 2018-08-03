@@ -31,21 +31,21 @@ namespace Alexa.NET.Response
 		public async Task<string> FullName()
 		{
 			var nameResponse = await Client.GetStringAsync("/v2/accounts/~current/settings/Profile.name");
-			var response = JValue.Parse(nameResponse);
+			var response = JToken.Parse(nameResponse);
 			return response.Value<string>();
 		}
 
 		public async Task<string> GivenName()
         {
             var givenNameResponse = await Client.GetStringAsync("/v2/accounts/~current/settings/Profile.givenName");
-			var response = JValue.Parse(givenNameResponse);
+			var response = JToken.Parse(givenNameResponse);
             return response.Value<string>();
         }
         
 		public async Task<string> Email()
         {
             var emailResponse = await Client.GetStringAsync("/v2/accounts/~current/settings/Profile.email");
-			var response = JValue.Parse(emailResponse);
+			var response = JToken.Parse(emailResponse);
             return response.Value<string>();
         }
 
