@@ -12,10 +12,12 @@ var response = ResponseBuilder.TellWithAskForPermissionConsentCard(
         CustomerProfilePermissions.Email
     }
 );
-
+```
 ## Getting customer profile information
+```csharp
 using Alexa.NET.Response
 
 var client = new CustomProfileClient(skillRequest);
 var fullName = await client.FullName();
 var email = await client.Email();
+```
