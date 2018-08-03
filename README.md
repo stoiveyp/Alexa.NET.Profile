@@ -1,4 +1,4 @@
-# Alexa.NET.CustomerContact
+# Alexa.NET.CustomerProfile
 Small helper library for Alexa.NET based skills to access the customer contact API
 
 ## Asking your user for consent to get customer information
