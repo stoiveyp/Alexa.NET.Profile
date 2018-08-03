@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Alexa.Net.CustomerContact\Alexa.Net.CustomerProfile.csproj" />
+    <ProjectReference Include="..\Alexa.Net.CustomerContact\Alexa.Net.CustomerProfile.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Examples\" />

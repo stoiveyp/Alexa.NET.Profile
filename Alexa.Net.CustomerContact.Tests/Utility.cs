@@ -3,7 +3,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Alexa.Net.CustomerProfile.Tests
+namespace Alexa.NET.CustomerProfile.Tests
 {
 	public static class Utility
     {

@@ -5,7 +5,7 @@ using Alexa.NET.Request;
 using Alexa.NET.Response;
 using Xunit;
 
-namespace Alexa.Net.CustomerProfile.Tests
+namespace Alexa.NET.CustomerProfile.Tests
 {
 	public class ClientTests
 	{

@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Alexa.Net.CustomerProfile.Tests
+namespace Alexa.NET.CustomerProfile.Tests
 {
 	public class ActionMessageHandler : HttpMessageHandler
     {
