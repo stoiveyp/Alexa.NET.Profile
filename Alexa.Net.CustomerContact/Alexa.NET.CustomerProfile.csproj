@@ -2,14 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
+    <PackageTags>amazon;alexa;echo;dot;echo dot;skills;messages</PackageTags>
+    <PackageReleaseNotes>Initial API interaction and permissions</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/stoiveyp/Alexa.NET.CustomerProfile</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/stoiveyp/Alexa.NET.SkillMessaging/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/stoiveyp/Alexa.NET.CustomerProfile</RepositoryUrl>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <Version>0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Steven Pears</Authors>
+    <Description>A simple .NET Core library for handling Alexa skills using the Customer Profile API</Description>
     <RootNamespace>Alexa.NET.CustomerProfile</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Class1.cs" />
-    <Compile Remove="FullNameResponse.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Alexa.NET" Version="1.5.4" />
+  <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="Alexa.NET" Version="1.4.0" />
   </ItemGroup>
 </Project>
