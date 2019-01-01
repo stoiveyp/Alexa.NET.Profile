@@ -18,9 +18,9 @@
     <ProjectReference Include="..\Alexa.Net.CustomerContact\Alexa.Net.CustomerProfile.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Examples\" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Update="Examples\FullAddress.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Examples\FullName.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -31,6 +31,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Examples\GivenName.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Examples\RegionAndPostalCode.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

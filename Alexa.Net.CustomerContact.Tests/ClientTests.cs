@@ -140,5 +140,29 @@ namespace Alexa.NET.CustomerProfile.Tests
             Assert.Equal(countryCode,phoneResult.CountryCode);
 			Assert.Equal(phoneNumber,phoneResult.PhoneNumber);
         }
-	}
+
+        [Fact]
+        public async Task GetCustomerAddress()
+        {
+            Assert.True(false);
+        }
+
+        [Fact]
+        public async Task GetCustomerAddressThrowsOnNullDevice()
+        {
+            Assert.True(false);
+        }
+
+        [Fact]
+        public async Task GetRegionAndPostalCode()
+        {
+            Assert.True(false);
+        }
+
+        [Fact]
+        public async Task GetRegionAndPostalCodeThrowsOnNullDevice()
+        {
+            Assert.True(false);
+        }
+    }
 }
