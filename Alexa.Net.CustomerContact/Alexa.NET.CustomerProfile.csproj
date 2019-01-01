@@ -3,7 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
     <PackageTags>amazon;alexa;echo;dot;echo dot;skills;messages</PackageTags>
-    <PackageReleaseNotes>Initial API interaction and permissions</PackageReleaseNotes>
+    <PackageReleaseNotes>Move client to Alexa.NET.CustomerProfile namespace
+Add Region &amp; Postcode support
+Add full address support</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/stoiveyp/Alexa.NET.CustomerProfile</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/stoiveyp/Alexa.NET.SkillMessaging/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/stoiveyp/Alexa.NET.CustomerProfile</RepositoryUrl>

@@ -18,7 +18,7 @@ namespace Alexa.NET.CustomerProfile
             request.Context.System.ApiEndpoint,
             request.Context.System.ApiAccessToken)
         {
-            DeviceId = request.Context.System.Device.DeviceID;
+            DeviceId = request?.Context.System?.Device?.DeviceID;
         }
 
         public CustomerProfileClient(string endpointUrl, string accessToken)

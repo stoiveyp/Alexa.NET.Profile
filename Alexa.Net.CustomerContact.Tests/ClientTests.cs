@@ -144,25 +144,70 @@ namespace Alexa.NET.CustomerProfile.Tests
         [Fact]
         public async Task GetCustomerAddress()
         {
-            Assert.True(false);
+            const string countryCode = "GB";
+            const string postcode = "NG1 1RE";
+            const string fullNamePath = "/v1/devices/amzn1.ask.device.deviceid/settings/address";
+            var runHandler = false;
+            var httpClient = new HttpClient(new ActionMessageHandler(req =>
+                {
+                    runHandler = true;
+                    Assert.Equal(req.RequestUri.PathAndQuery, fullNamePath);
+                    return new HttpResponseMessage(System.Net.HttpStatusCode.OK)
+                    {
+                        Content = new StringContent(Utility.GetExampleJson("FullAddress.json"))
+                    };
+                }))
+                { BaseAddress = new Uri("https://testclient.com", UriKind.Absolute) };
+
+            var client = new CustomerProfileClient(httpClient);
+            var fullAddress = await client.FullAddress("amzn1.ask.device.deviceid");
+
+            Assert.True(runHandler);
+            Assert.Equal("Lace Market",fullAddress.AddressLine2);
+            Assert.Equal(countryCode, fullAddress.CountryCode);
+            Assert.Equal(postcode, fullAddress.PostalCode);
         }
 
         [Fact]
         public async Task GetCustomerAddressThrowsOnNullDevice()
         {
-            Assert.True(false);
+            var client = new CustomerProfileClient(new HttpClient());
+            var exc = await Assert.ThrowsAsync<ArgumentNullException>(() => client.FullAddress(null));
+            Assert.Equal("deviceId", exc.ParamName);
         }
 
         [Fact]
         public async Task GetRegionAndPostalCode()
         {
-            Assert.True(false);
+            const string countryCode = "GB";
+            const string postcode = "NG1 1RE";
+            const string fullNamePath = "/v1/devices/amzn1.ask.device.deviceid/settings/address/countryAndPostalCode";
+            var runHandler = false;
+            var httpClient = new HttpClient(new ActionMessageHandler(req =>
+                {
+                    runHandler = true;
+                    Assert.Equal(req.RequestUri.PathAndQuery, fullNamePath);
+                    return new HttpResponseMessage(System.Net.HttpStatusCode.OK)
+                    {
+                        Content = new StringContent(Utility.GetExampleJson("RegionAndPostalCode.json"))
+                    };
+                }))
+                { BaseAddress = new Uri("https://testclient.com", UriKind.Absolute) };
+
+            var client = new CustomerProfileClient(httpClient);
+            var regionAndPostalCode = await client.RegionAndPostalCode("amzn1.ask.device.deviceid");
+
+            Assert.True(runHandler);
+            Assert.Equal(countryCode, regionAndPostalCode.CountryCode);
+            Assert.Equal(postcode, regionAndPostalCode.PostalCode);
         }
 
         [Fact]
         public async Task GetRegionAndPostalCodeThrowsOnNullDevice()
         {
-            Assert.True(false);
+            var client = new CustomerProfileClient(new HttpClient());
+            var exc = await Assert.ThrowsAsync<ArgumentNullException>(() => client.RegionAndPostalCode(null));
+            Assert.Equal("deviceId", exc.ParamName);
         }
     }
 }
