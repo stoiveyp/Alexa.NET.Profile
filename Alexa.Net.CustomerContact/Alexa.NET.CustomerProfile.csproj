@@ -5,7 +5,7 @@
     <PackageTags>amazon;alexa;echo;dot;echo dot;skills;messages</PackageTags>
     <PackageReleaseNotes>update to netstandard2.0</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/stoiveyp/Alexa.NET.CustomerProfile</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/stoiveyp/Alexa.NET.SkillMessaging/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <RepositoryUrl>https://github.com/stoiveyp/Alexa.NET.CustomerProfile</RepositoryUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -16,10 +16,18 @@
     <Authors>Steven Pears</Authors>
     <Description>A simple .NET Core library for handling Alexa skills using the Customer Profile API</Description>
     <RootNamespace>Alexa.NET.CustomerProfile</RootNamespace>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
   <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Alexa.NET" Version="1.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>
