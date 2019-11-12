@@ -1,9 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexa.NET.CustomerProfile", "Alexa.Net.CustomerContact\Alexa.Net.CustomerProfile.csproj", "{D5A28F57-2A7B-4357-A411-C9A7A06DE62B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexa.NET.CustomerProfile", "Alexa.Net.CustomerProfile\Alexa.Net.CustomerProfile.csproj", "{D5A28F57-2A7B-4357-A411-C9A7A06DE62B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexa.Net.CustomerProfile.Tests", "Alexa.Net.CustomerContact.Tests\Alexa.Net.CustomerProfile.Tests.csproj", "{1BEAF5FD-A134-4C92-BDCE-0D0834325D95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alexa.Net.CustomerProfile.Tests", "Alexa.Net.CustomerProfile.Tests\Alexa.Net.CustomerProfile.Tests.csproj", "{1BEAF5FD-A134-4C92-BDCE-0D0834325D95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
