@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageTags>amazon;alexa;echo;dot;echo dot;skills;messages</PackageTags>
-    <PackageReleaseNotes>update to netstandard2.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Correct issue with permission format on address and postal code (thanks daledev-uk)</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/stoiveyp/Alexa.NET.CustomerProfile</PackageProjectUrl>
     <PackageLicenseUrl></PackageLicenseUrl>
     <RepositoryUrl>https://github.com/stoiveyp/Alexa.NET.CustomerProfile</RepositoryUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>2.1.0</Version>
+    <Version>2.1.1</Version>
     <PackageId>Alexa.NET.CustomerProfile</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Steven Pears</Authors>
