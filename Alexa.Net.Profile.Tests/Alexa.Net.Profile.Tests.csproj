@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Alexa.Net.CustomerProfile\Alexa.NET.Profile.csproj" />
+    <ProjectReference Include="..\Alexa.Net.Profile\Alexa.NET.Profile.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Examples\FullAddress.json">
