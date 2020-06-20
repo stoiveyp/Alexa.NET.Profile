@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Alexa.NET.CustomerProfile
+namespace Alexa.NET.Profile
 {
 	public class MobileNumberResponse
 	{

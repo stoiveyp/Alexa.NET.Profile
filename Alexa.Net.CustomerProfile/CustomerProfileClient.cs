@@ -2,11 +2,12 @@
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Alexa.NET.Profile.Customer;
 using Alexa.NET.Request;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Alexa.NET.CustomerProfile
+namespace Alexa.NET.Profile
 {
     public class CustomerProfileClient
     {

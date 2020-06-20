@@ -1,13 +1,13 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Alexa.NET.Profile;
 using Alexa.NET.Request;
-using Alexa.NET.Response;
 using Xunit;
 
 namespace Alexa.NET.CustomerProfile.Tests
 {
-	public class ClientTests
+	public class CustomerProfileTests
 	{
 		[Fact]
 		public void CreateFromSkillRequestSetupCorrectly()

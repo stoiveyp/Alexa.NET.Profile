@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace Alexa.NET.CustomerProfile
+namespace Alexa.NET.Profile.Customer
 {
     public class FullAddress
     {

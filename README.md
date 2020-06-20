@@ -1,5 +1,5 @@
-# Alexa.NET.CustomerProfile
-Small helper library for Alexa.NET based skills to access the customer contact API
+# Alexa.NET.Profile
+Small helper library for Alexa.NET based skills to access the customer and person profile APIs
 
 ## Asking your user for consent to get customer information
 ```csharp
@@ -15,9 +15,17 @@ var response = ResponseBuilder.TellWithAskForPermissionConsentCard(
 ```
 ## Getting customer profile information
 ```csharp
-using Alexa.NET.Response
+using Alexa.NET.Profile
 
 var client = new CustomProfileClient(skillRequest);
 var fullName = await client.FullName();
 var email = await client.Email();
+```
+
+# Getting person profile information
+```csharp
+using Alexa.NET.Profile
+
+var client = new PersonProfileClient(skillRequest);
+var fullName = await client.FullName();
 ```

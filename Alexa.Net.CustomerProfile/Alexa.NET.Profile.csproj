@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageTags>amazon;alexa;echo;dot;echo dot;skills;messages</PackageTags>
+    <PackageReleaseNotes>Introduction of Person Profile API</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/stoiveyp/Alexa.NET.Profile</PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/stoiveyp/Alexa.NET.Profile</RepositoryUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <Version>1.0.0</Version>
+    <PackageId>Alexa.NET.Profile</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Steven Pears</Authors>
+    <Description>A simple .NET Core library for handling Alexa skills using the Customer and Person Profile APIs</Description>
+    <RootNamespace>Alexa.NET.Profile</RootNamespace>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+  <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Alexa.NET" Version="1.13.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
